@@ -39,8 +39,8 @@ RUN rm -rf /root/.lein /root/.m2 /root/.node-gyp /root/.npm /root/.yarn /root/.y
 EXPOSE 3000
 
 # For file to be tested
-COPY /home/om/Downloads/Deseq.csv /data/Deseq.csv
-COPY /home/om/Downloads/output.db /data/output.db
+COPY Deseq.csv /data/Deseq.csv
+COPY output.db /data/output.db
 
 # build and then run it
 WORKDIR /app/source
